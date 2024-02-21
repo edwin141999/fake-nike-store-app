@@ -1,11 +1,11 @@
-import News from "./components/news/news";
+import News from "./news/news";
 import Header from "./header/header";
 import Navbar from "./navbar/navbar";
 
 
 export default function Home() {
   return (
-    <main className="px-12">
+    <main>
       <Navbar />
       <Header />
       <News />
