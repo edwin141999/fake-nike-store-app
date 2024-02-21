@@ -1,6 +1,7 @@
-import Header from "./components/header/header";
-import Navbar from "./components/navbar/navbar";
 import News from "./components/news/news";
+import Header from "./header/header";
+import Navbar from "./navbar/navbar";
+
 
 export default function Home() {
   return (
