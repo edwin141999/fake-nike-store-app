@@ -1,8 +1,9 @@
 import Image from "next/image";
+import IconButton from "../components/IconButton";
 
 export default function Navbar() {
   return (
-    <nav className="flex flex-row py-5 items-center justify-between">
+    <nav className="flex flex-row py-5 items-center justify-between px-12">
       {/* LOGO NIKE */}
       <Image src={'/nike-logo.webp'} alt="Nike Logo" height={80} width={80} className="cursor-pointer" />
       {/* HOVERS */}
@@ -25,12 +26,8 @@ export default function Navbar() {
         </div>
         {/* LOVE AND BAG */}
         <div className="flex flex-row gap-2">
-          <div className="p-2 rounded-3xl hover:bg-slate-200 transition-colors duration-200 cursor-pointer">
-            <Image src={'/icons/heart.svg'} alt="Heart SVG" height={24} width={24} />
-          </div>
-          <div className="p-2 rounded-3xl hover:bg-slate-200 transition-colors duration-200 cursor-pointer">
-            <Image src={'/icons/bag.svg'} alt="Bag SVG" height={24} width={24} />
-          </div>
+          <IconButton src={'/icons/heart.svg'} alt={'Heart SVG'} bg={'hover:bg-slate-200'} p={'p-2'} />
+          <IconButton src={'/icons/bag.svg'} alt={'Bag SVG'} bg={'hover:bg-slate-200'} p={'p-2'} />
         </div>
       </div>
     </nav>

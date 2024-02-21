@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Button from "../components/Button";
 
 export default function Header() {
   return (
-    <section>
+    <section className="px-12">
       <Image src={'/promo-img.webp'} alt="Promo Image" width={1000} height={1000} className="w-full" />
       <div className="flex flex-col items-center text-center gap-6 py-10">
         <h2 className="text-7xl font-bold">CELEBRANDO A NUESTROS MIEMBROS</h2>
@@ -12,10 +13,10 @@ export default function Header() {
         </div>
         <span>Además de Meses sin intereses y acceso a recompensas exclusivas.</span>
         <div className="flex gap-1">
-          <button type="button" className="text-white font-semibold bg-black rounded-3xl px-5 py-1.5 hover:bg-gray-500">Hombre</button>
-          <button type="button" className="text-white font-semibold bg-black rounded-3xl px-5 py-1.5 hover:bg-gray-500">Mujer</button>
-          <button type="button" className="text-white font-semibold bg-black rounded-3xl px-5 py-1.5 hover:bg-gray-500">Niños</button>
-          <button type="button" className="text-white font-semibold bg-black rounded-3xl px-5 py-1.5 hover:bg-gray-500">*T&C</button>
+          <Button text={'Hombre'} textColor={'text-white'} color={'bg-black hover:bg-gray-500'} />
+          <Button text={'Mujer'} textColor={'text-white'} color={'bg-black hover:bg-gray-500'} />
+          <Button text={'Niños'} textColor={'text-white'} color={'bg-black hover:bg-gray-500'} />
+          <Button text={'*T&C'} textColor={'text-white'} color={'bg-black hover:bg-gray-500'} />
         </div>
       </div>
     </section>
