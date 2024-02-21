@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="flex flex-row py-5 px-12 items-center justify-between">
+    <nav className="flex flex-row py-5 items-center justify-between">
       {/* LOGO NIKE */}
       <Image src={'/nike-logo.webp'} alt="Nike Logo" height={80} width={80} className="cursor-pointer" />
       {/* HOVERS */}
