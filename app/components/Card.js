@@ -2,7 +2,6 @@ import Button from "./Button";
 
 export default function Card({ bgImg, title, subtitle }) {
   return (
-    // w-96 h-4/6
     <article className="flex flex-col bg-cover bg-no-repeat min-w-[26rem] items-start justify-end text-white gap-8 p-12"
       style={{ backgroundImage: bgImg }}
     >
