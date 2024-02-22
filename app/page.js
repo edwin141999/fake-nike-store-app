@@ -1,7 +1,8 @@
-import News from "./news/news";
 import Header from "./header/header";
-import Navbar from "./navbar/navbar";
+import Info from "./info/info";
 import Members from "./members/members";
+import Navbar from "./navbar/navbar";
+import News from "./news/news";
 
 
 export default function Home() {
@@ -10,7 +11,8 @@ export default function Home() {
       <Navbar />
       <Header />
       <News />
-      <Members/>
+      <Members />
+      <Info />
     </main>
   );
 }
